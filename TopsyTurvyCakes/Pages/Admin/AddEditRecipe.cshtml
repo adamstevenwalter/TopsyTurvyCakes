@@ -3,9 +3,11 @@
 @{
     ViewData["Title"] = Model.IsNewRecipe ? "New Recipe" : "Edit Recipe";
 }
+<div asp-validation-summary="All"></div>
 <form method="post" class="form-horizontal">
     <div class="form-group">
         <label asp-for="Recipe.Name" class="col-md-2 control-label"></label>
+        <span asp-validation-for="Recipe.Name"></span>
         <div class="col-md-10">
             <input asp-for="Recipe.Name" class="form-control" />
         </div>
