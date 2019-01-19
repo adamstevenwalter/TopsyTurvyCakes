@@ -1,10 +1,8 @@
 ﻿@page "{id}"
-@using TopsyTurvyCakes.Models
 @{
-    Layout = "_Layout";
     var id = long.Parse((string)RouteData.Values["id"]);
-    var recipesService = new RecipesService();
-    var recipe = await recipesService.FindAsync(id);
+    var recipe = await RecipesService.FindAsync(id);
+    ViewData["Title"] = recipe.Name;
 }
     <div class="container">
         <div class="row recipe">
