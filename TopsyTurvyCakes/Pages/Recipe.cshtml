@@ -4,6 +4,7 @@
     var recipe = await RecipesService.FindAsync(id);
     ViewData["Title"] = recipe.Name;
 }
+    <a asp-page="Admin/AddEditRecipe" class="add-recipe btn btn-primary">Edit Recipie</a>
     <div class="container">
         <div class="row recipe">
             <div class="col-md-8">
