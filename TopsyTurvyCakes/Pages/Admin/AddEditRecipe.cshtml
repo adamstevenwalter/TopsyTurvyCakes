@@ -3,11 +3,9 @@
 @{
     ViewData["Title"] = Model.IsNewRecipe ? "New Recipe" : "Edit Recipe";
 }
-<div asp-validation-summary="All"></div>
 <form method="post" class="form-horizontal">
     <div class="form-group">
         <label asp-for="Recipe.Name" class="col-md-2 control-label"></label>
-        <span asp-validation-for="Recipe.Name"></span>
         <div class="col-md-10">
             <input asp-for="Recipe.Name" class="form-control" />
         </div>
@@ -33,7 +31,6 @@
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
             <button type="submit" class="btn btn btn-primary">Save</button>
-            <button type="submit" class="btn btn btn-danger" asp-page-handler="Delete">Delete</button>
         </div>
     </div>
 </form>
