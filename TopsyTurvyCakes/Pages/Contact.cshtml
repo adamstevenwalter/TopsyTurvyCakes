@@ -1,0 +1,59 @@
+﻿@page
+@model TopsyTurvyCakes.Pages.ContactModel
+@{
+    ViewData["Title"] = "Contact Us";
+}
+<!--This will eventually send the info from the form to Admin@TTCD.com-->
+<div class="container">
+    <div class="row recipe">
+        <form method="post" class="form-horizontal">
+            <div class="form-group">
+                <label for="Name" class="col-md-2 control-label">Your Name (required)</label>
+                <div class="col-md-10">
+                    <input for="Name" class="form-control" required/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Email" class="col-md-2 control-label">Your Email (required)</label>
+                <div class="col-md-10">
+                    <input for="Email" class="form-control" required/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Subject" class="col-md-2 control-label">Subject</label>
+                <div class="col-md-10">
+                    <input for="Subject" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Message" class="col-md-2 control-label">Your Message</label>
+                <div class="col-md-10">
+                    <textarea rows="5" for="Message" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <button type="submit" class="btn btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Contact Info</h4>
+                <p>Our Address:</p>
+                <p>Our Phone Number:</p>
+                <p>Our Email Address:</p>
+                <p>_</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Follow Us On Social Media</h4>
+                <p><a href="http://facebook.com">Facebook</a></p>
+                <p><a href="http://instagram.com">Instagram</a></p>
+            </div>
+        </div>
+        <div>
+            <p>_</p>
+        </div>
+    </div>
+</div>
+

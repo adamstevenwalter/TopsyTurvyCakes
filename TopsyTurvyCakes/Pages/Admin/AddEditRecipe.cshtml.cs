@@ -21,8 +21,6 @@ namespace TopsyTurvyCakes.Pages.Admin
         }
         [BindProperty]
         public Recipe Recipe { get; set; }
-        //[BindProperty]
-        //public Image Image { get; set; }
         public IRecipesService recipesService { get; set; }
         [BindProperty]
         public IFormFile Image { get; set; }
